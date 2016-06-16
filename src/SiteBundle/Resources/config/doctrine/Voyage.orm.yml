@@ -1,0 +1,26 @@
+SiteBundle\Entity\Voyage:
+    type: entity
+    table: null
+    repositoryClass: SiteBundle\Repository\VoyageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        destination:
+            type: string
+            length: 255
+        dateDepart:
+            type: date
+            column: date_depart
+        nombreJours:
+            type: integer
+            column: nombre_jours
+        cout:
+            type: integer
+    lifecycleCallbacks: {  }
