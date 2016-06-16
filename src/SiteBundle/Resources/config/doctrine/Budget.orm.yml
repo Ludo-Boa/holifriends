@@ -1,0 +1,14 @@
+SiteBundle\Entity\Budget:
+    type: entity
+    table: null
+    repositoryClass: SiteBundle\Repository\BudgetRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        budget:
+            type: integer
+    lifecycleCallbacks: {  }
