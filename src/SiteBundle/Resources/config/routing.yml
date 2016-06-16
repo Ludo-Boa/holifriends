@@ -1,3 +1,7 @@
+site_voyage:
+    resource: "@SiteBundle/Resources/config/routing/voyage.yml"
+    prefix:   /voyage
+
 site_homepage:
     path:     /
     defaults: { _controller: SiteBundle:Default:index }
