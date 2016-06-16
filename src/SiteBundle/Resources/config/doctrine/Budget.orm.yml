@@ -11,4 +11,5 @@ SiteBundle\Entity\Budget:
     fields:
         budget:
             type: integer
+
     lifecycleCallbacks: {  }

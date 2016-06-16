@@ -42,4 +42,32 @@ parent::__construct();
 
 }
 
+    /**
+     * @var \SiteBundle\Entity\Budget
+     */
+    private $budget;
+
+
+    /**
+     * Set budget
+     *
+     * @param \SiteBundle\Entity\Budget $budget
+     * @return User
+     */
+    public function setBudget(\SiteBundle\Entity\Budget $budget = null)
+    {
+        $this->budget = $budget;
+
+        return $this;
+    }
+
+    /**
+     * Get budget
+     *
+     * @return \SiteBundle\Entity\Budget 
+     */
+    public function getBudget()
+    {
+        return $this->budget;
+    }
 }

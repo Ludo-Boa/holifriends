@@ -6,3 +6,10 @@ UserBundle\Entity\User:
             type: integer
             generator:
                 strategy: AUTO
+    manyToOne:
+        budget:
+            targetEntity: SiteBundle\Entity\Budget
+            joinColumn:
+                name: budget_id
+                referencedColumnName: id
+lifecycleCallbacks: {  }
