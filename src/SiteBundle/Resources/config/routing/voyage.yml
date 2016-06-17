@@ -1,0 +1,24 @@
+get_voyages:
+    path:     /voyages.{_format}
+    defaults: { _controller: "SiteBundle:Voyage:getVoyages" }
+    methods:  GET
+
+get_voyage:
+    path:     /{id}.{_format}
+    defaults: { _controller: "SiteBundle:Voyage:getVoyage" }
+    methods:  GET
+
+voyage_new:
+    path:     /new.{_format}
+    defaults: { _controller: "SiteBundle:Voyage:createVoyage" }
+    methods:  [POST]
+
+voyage_edit:
+    path:     /edit/{id}.{_format}
+    defaults: { _controller: "SiteBundle:Voyage:editVoyage" }
+    methods:  PUT
+
+voyage_delete:
+    path:     /delete/{id}.{_format}
+    defaults: { _controller: "SiteBundle:Voyage:deleteVoyage" }
+    methods:  DELETE
