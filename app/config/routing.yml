@@ -11,7 +11,7 @@ app:
     type:     annotation
 
 api:
-    resource: "@SiteBundle/Controller/"
+    resource: "@SiteBundle/Resources/config/routing.yml"
     type: rest
     prefix: /api/
 
